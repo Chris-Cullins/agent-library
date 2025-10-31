@@ -23,6 +23,43 @@ Features are organized hierarchically:
 
 Always check `work/todo.md` for the prioritized list of stories to work on.
 
+#### Planning Workflow: From Requirements to Implementation
+
+This project uses an iterative breakdown process:
+
+1. **Start with Requirements** - Create a `how-it-works.md` or `how-it-should-work.md` file
+   - Document functional requirements
+   - Describe user flows and business rules
+   - Define success criteria
+   - Can be for the whole project, an epic, or a major feature
+
+2. **Break Down into Epics** - Identify large bodies of work
+   - Group related functionality
+   - Align with user-facing value
+   - Create epic directories in `work/`
+
+3. **Break Epics into Features** - Define specific functionality
+   - Each feature delivers complete, testable functionality
+   - Create feature directories within epics
+   - Document acceptance criteria
+
+4. **Break Features into Stories** - Create implementable tasks
+   - Each story is 1-3 days of work
+   - Create story files within feature directories
+   - Add to `work/todo.md` in priority order
+
+5. **Iterate and Refine** - Continuously improve the plan
+   - Split large stories during implementation
+   - Add missing stories as discovered
+   - Adjust priorities based on learnings
+   - Update documentation as requirements change
+
+**Key files for planning:**
+- `docs/how-it-works.md` - Source of functional requirements
+- Template: `agent-library/templates/how-it-works-template.md`
+- Breakdown prompt: `agent-library/prompts/requirements-breakdown.md`
+- Refinement prompt: `agent-library/prompts/plan-refinement.md`
+
 #### Story Files
 Each story file contains:
 - Description of what needs to be built
@@ -219,6 +256,15 @@ Key components:
 ---
 
 ## Agent-Specific Instructions
+
+### For Planning Agents
+- Read the how-it-works document thoroughly before breaking it down
+- Use the requirements-breakdown prompt to create epics/features/stories
+- Ensure stories are sized appropriately (1-3 days each)
+- Make acceptance criteria specific and testable
+- Identify and document dependencies
+- Prioritize work in logical dependency order
+- Iterate and refine the breakdown multiple times
 
 ### For Implementation Agents
 - Always read the story file before starting

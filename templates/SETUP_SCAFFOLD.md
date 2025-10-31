@@ -37,6 +37,69 @@ This directory contains the architectural and constitutional documentation for t
 Keep these documents up to date as the project evolves. They serve as the source of truth for understanding the system.
 ```
 
+**`docs/how-it-works.md`** - Functional requirements and system behavior (IMPORTANT - Start here for planning):
+```markdown
+# How It Works
+
+This document describes the functional requirements and behavior of this system.
+
+## Overview
+
+**What:** [Brief description of what this system does]
+
+**Why:** [Why this exists, what problem it solves]
+
+**Who:** [Who will use this]
+
+## Functional Requirements
+
+### [Requirement 1]
+**What users can do:** [Describe the user-facing functionality]
+
+**How it should work:**
+1. [Step 1 of the workflow]
+2. [Step 2 of the workflow]
+
+**Expected behavior:**
+- [Behavior 1]
+- [Behavior 2]
+
+### [Requirement 2]
+**What users can do:** [Describe the user-facing functionality]
+
+**How it should work:**
+1. [Step 1]
+2. [Step 2]
+
+## User Flows
+
+### [Primary User Flow]
+1. User [action]
+2. System [response]
+3. Result: [final state]
+
+## Business Rules
+
+1. **[Rule 1]:** [Description]
+2. **[Rule 2]:** [Description]
+
+## Success Criteria
+
+- [ ] [Success criterion 1]
+- [ ] [Success criterion 2]
+
+## Next Steps
+
+After documenting requirements:
+1. Use the requirements-breakdown prompt to create epics/features/stories
+2. Iterate and refine the breakdown
+3. Begin implementation
+
+---
+
+**Note:** Use the template at `agent-library/templates/how-it-works-template.md` for a more comprehensive structure.
+```
+
 **`work/todo.md`** - Master checklist of all stories:
 ```markdown
 # Work Todo
